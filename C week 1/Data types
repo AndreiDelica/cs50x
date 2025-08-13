@@ -1,0 +1,36 @@
+#include<stdio.h>
+#include<stdbool.h>
+void conditionals(){
+
+
+
+
+}
+
+int main(){
+
+int drei=21, kian=32,a,b,c; //assigning of integers
+a = b = c=69; // multiple assignment of the same value
+
+char thom[]="Delica malupit", ash='T'; //assigning of string and character. indexes is needed as it allows the program to have multiple character
+float caloy = 21.2123; //implement float/takes less memory
+double max = 93.1234; //implement double/takes up more memory
+float calculation = caloy*max/10; //arithmetic/calculation using float/assigning variable.
+float calculation2= (float)drei*kian/a;//added (float) for it to have the exact result even though its an int
+
+
+
+  printf("Sup bro, my grade is %d, I bet yours is %d? \n",drei,kian);//uses %d || %i to use as format specifiers for int.
+  printf("yeah bruh, %s, how did u know? %canginamo\n",thom, ash); //uses %s for strings. Uses %c for character.
+  printf("my final grade is %.0lf.", max);//%lf is for double// add  .n (n stands for any value(no.)) to show how many decimals to be seen.
+  printf("\nvalue of A:%d, Value of B:%d, Value of C:%d",c,b,a); //remember: The value of the specifiers would be determined by the position of the declared variables
+  
+  printf("\nthe total calculation is %f\n" ,calculation); 
+  printf("\nthe total calculation is %f\n" ,calculation2);
+
+  printf("getting the memory size: %zu \n", sizeof(drei)); //use %zu to show the size of the memory. "sizeof" brings value to the %zu 
+
+
+return 0;
+
+}
