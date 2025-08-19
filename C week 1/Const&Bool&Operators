@@ -1,0 +1,82 @@
+#include<stdio.h>
+#include<stdbool.h>
+#define PI 3.14159       // Preprocessor constant
+
+int main(){
+
+
+const int KI =21;//makes the value unchangeable//Use UPPERCASE for naming the variable
+int x = 21, y =12, z=51; //assignment
+printf("value of ki is: \n%d,\n%f, \n", KI, PI);
+
+//----operators ---
+
+
+//arithmetic operators. (+, -, /, *, ++, --)
+
+//assignment operators. assigns a value.
+
+x += 13; //21+13
+y -= 21; //12-21; 
+
+//same thing with other assignment operators such as (/,*,%)
+
+printf("%d",x);
+printf("\n");
+printf("%d",y);
+
+
+
+//comparison operators;
+/*
+== - both value is exactly the same = true
+!= - Not equal = true
+> - LARGE is much greater than SMALL. (LARGE>SMALL) = true
+< - LARGE is lesser than SMALL. (LARGE<SMALL) = true
+>= - LARGE is much greater than or equal to SMALL. (LARGE>=SMALL) = true
+<= - LARGE is lesser than or greater than SMALL. (LARGE<=SMALL) = true
+
+true means it returns 1;
+*/
+
+
+
+//logical operators
+/*
+
+&& - AND operators - returns true if both statements are true.
+|| - OR operators - returns true if either one is true. 
+!  - NOT operators - Reverse the result, returns 0 if the result is 1.
+
+*/
+
+//boolean Variables
+
+bool isProgrammingFun = false;
+bool isProgrammingHard = true;
+
+ printf("\n%d", isProgrammingFun==isProgrammingHard);
+ printf("\n%d", isProgrammingFun<isProgrammingHard);
+ printf("\n%d", isProgrammingFun>isProgrammingHard);
+
+//real life example - find out if a person is old enough to vote.
+
+int number;
+
+    printf("\n\t\tWelcome to the voting system!");
+    printf("\n \n\tEnter your age to verify if you are allowed to vote:");
+    
+    scanf("d%", &number);
+    
+    if (number >= 18){
+        printf("You are old enough to vote!");
+    } else {
+        printf("you are too young to vote bobo");
+    }
+    
+    
+
+
+ 
+ 
+}
