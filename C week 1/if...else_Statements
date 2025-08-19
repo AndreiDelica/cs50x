@@ -1,1 +1,46 @@
+#include<stdio.h>
+#include<stdbool.h>
 
+int main(){
+    
+//if statements - use to specify a block of code that is true to be executed.
+
+char andrei[50];
+int num;
+    
+    printf("Welcome to the system madafakas! \n\n Who tf are you?\n");
+    
+    fgets(andrei, sizeof(andrei), stdin);  // safe, reads spaces too || good for sentences.
+
+    printf("Welcome: %s\n, \n\n\t Input your age!", andrei);
+
+    
+    scanf("%d", &num); //For simple inputs like a digit.|| Only scan one word.
+    
+    if(num>21){
+        printf("You are the fucking lebron james of comp sci! ");
+        
+    }
+//else-if statement - Block of code to be executed if condition 1 is false;
+    else if(num==21){
+        printf("almost there giga chad");
+        
+        
+    }    
+//else statements- use to counter the above if and else-if statements || if the condition above is false
+    else{
+        printf("Not on a lebron james level bruh");
+    }
+    
+
+    
+
+
+//short hand if (TERNARY OPERATOR)
+    
+int weird;
+    scanf("%d", &weird);
+    
+    (weird>21) ? printf("fucking lebron james") : printf("not there yet"); //if else (variable = (condition) ? expressionTrue : expressionFalse;)
+
+}
