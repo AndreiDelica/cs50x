@@ -1,1 +1,36 @@
 
+#include<stdio.h>
+#include<stdbool.h>
+
+int main(){
+    
+    int day; 
+    
+    printf("Enter 1 or 2?");
+    scanf("%d", &day);
+    
+    switch(day){ //switch is only evaluated once
+        
+        case 1:      //The value is compared to each cases, if one matches then that case would be used.
+            printf("HI");
+            break; //Once the case is chosen, the break function would stop the process and would proceed with just the case chosen.
+            
+        case 2:
+            printf("HELLO");
+            break; //if their are no break in case 1, then once the case 1 is chosen it would continue to case 2.
+        
+        default: //specifies code to run if there is no match.
+            printf("None of The choices giga");
+            
+
+
+
+
+
+    }
+    
+    
+    
+    
+    
+}
