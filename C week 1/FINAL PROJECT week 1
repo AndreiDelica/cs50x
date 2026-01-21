@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int main(void){
+    
+    int choices, size;
+ 
+    printf("Welcome to the world of Mario!\n\n");
+    printf("Choose: \n");
+    printf("1.) START THE GAME!! \n");
+    printf("2.) EXIT \n");
+    printf("Choice: ");
+    scanf("%d", &choices);
+
+    switch(choices){
+        
+        case 1: 
+            printf("Let's Create an obstacle\n");
+            printf("How large do you want the obstacle to be? (Just numbers!): ");
+            scanf("%d", &size);
+
+            for (int i = 0; i < size; i++) {
+                for (int j = 0; j < size; j++) {
+                    printf("+");
+                }
+                printf("\n");
+            }
+            break;
+        
+        case 2:
+            printf("BYE!!!\n");
+            break;
+        
+        default:
+            printf("TYPE ONLY A NUMBER BRUHHH\n");
+    }
+
+    return 0;
+}
