@@ -1,0 +1,68 @@
+#include <stdio.h>
+//Delica Project week 1 
+//Uses do-while and for loop and if condition.
+int main(void){
+    
+    int choices, size;
+    char again;
+ 
+    printf("Welcome to the world of Mario!\n\n");
+    printf("Choose: \n");
+    printf("1.) START THE GAME!! \n");
+    printf("2.) EXIT \n");
+    printf("Choice: ");
+    scanf("%d", &choices);
+    
+    do{
+        switch(choices){
+            
+            case 1: 
+                printf("Let's Create an obstacle\n");
+                printf("How large do you want the obstacle to be? (Just numbers!): ");
+                scanf("%d", &size);
+    
+               for (int i = 1; i <= size; i++) {
+            
+                // left spaces
+                for (int s = 0; s < size - i; s++)
+                    printf(" ");
+            
+                // left blocks
+                for (int b = 0; b < i; b++)
+                    printf("#");
+            
+                // middle gap
+                printf("  ");
+            
+                // right blocks
+                for (int b = 0; b < i; b++)
+                    printf("#");
+            
+                    printf("\n");
+                    
+        }
+            printf("Press \"y\" if you want to try again? or press n to quit: ");
+            printf(" ");
+            scanf(" %c", &choices);
+                if(choices == 'n'){
+        
+                printf("bye!!");
+                }
+                
+                break;
+            
+            case 2:
+                printf("BYE!!!\n");
+                break;
+            
+            default:
+                printf("TYPE ONLY A NUMBER BRUHHH\n");
+                
+        }
+        
+    } while(again =='y'|| again =='Y');
+            
+        
+
+    return 0;
+}
