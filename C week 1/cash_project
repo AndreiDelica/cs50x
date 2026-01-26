@@ -1,0 +1,37 @@
+#include<stdio.h>
+#include<cs50.h>
+#include<string.h>
+
+int main(){
+
+    int change;
+    string again;
+do{
+
+    change = get_int("how much is your change? : ");
+
+
+int count = 0;
+
+count = count +(change/25);
+change = change%25;
+
+count = count +(change/10);
+change = change%10;
+
+count = count +(change/5);
+change = change%5;
+
+count = count +(change/1);
+change = change%1;
+
+    printf("Your have a total count of %d ", count);
+    again = get_string("\n Want to know your change again? (TYPE YES or NO)");
+
+    printf("\n");
+
+}while(strcmp(again, "yes") == 0 || strcmp(again, "YES") == 0  );
+
+
+    return 0;
+}
