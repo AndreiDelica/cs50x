@@ -1,1 +1,16 @@
+#include<stdio.h>
+#include<cs50.h>
+#include<bool.h>
 
+int main(){
+
+string = name;
+bool valid = false;
+do{
+ name = get_string("Enter your name: "/n);
+ printf("Hi, %s", name);
+
+
+}while(!valid)
+
+}
