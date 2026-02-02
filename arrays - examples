@@ -16,4 +16,12 @@ void print_column(int height)
 
 }
 
+//pampaganda lang sa git tracker HAHJAJHAJHA TINATAMAD NA AKO MAG CODE BULLSHIT TALAGAAAAA
+
+
+
+#include<stdio.h>
+#include<cs50.h>
+
+
 //to be continued
